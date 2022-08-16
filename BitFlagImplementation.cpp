@@ -11,7 +11,7 @@ void BitFlagImplementation::setActivity(int eActivity_newActivity)
 	Can be set using the bitwise OR operator:
 		activity = walking | dancing;
 	*/
-	this->activity = eActivity_newActivity;
+	this->activity = this->activity | eActivity_newActivity;
 }
 
 int BitFlagImplementation::getActivity()
