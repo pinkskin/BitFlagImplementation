@@ -10,7 +10,7 @@ int main()
     int activityTester = eActivity::dancing | eActivity::swimming;  //all must be turned on. if not, will be false
 
     //Set activity via bitflag
-    bfi.setActivity(activitySetter);
+    bfi.toggleActivity(activitySetter);
 
     //Check activated activities via bitflag
     bool isActivityActive = bfi.isActivityActive(activityTester);

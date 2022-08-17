@@ -5,13 +5,19 @@ BitFlagImplementation::BitFlagImplementation()
 }
 
 //Activate flags using bitwise OR(|)
-void BitFlagImplementation::setActivity(int eActivity_newActivity)
+void BitFlagImplementation::toggleActivity(int eActivity_toToggle)
 {
 	/*
 	Can be set using the bitwise OR operator:
 		activity = walking | dancing;
 	*/
-	this->activity = this->activity | eActivity_newActivity;
+	this->activity = this->activity | eActivity_toToggle;
+}
+
+//Deactivate flags using bitwise AND(&) and bitwise NOT(~)
+void BitFlagImplementation::untoggleActivity(int eActivity_toUntoggle)
+{
+	this->activity = this->activity & ~eActivity_toUntoggle;
 }
 
 int BitFlagImplementation::getActivity()

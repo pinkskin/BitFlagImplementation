@@ -17,7 +17,8 @@ public:
     //CONSTRUCTOR
 	BitFlagImplementation();
 
-    void setActivity(int eActivity_newActivity);
+    void toggleActivity(int eActivity_toToggle);
+    void untoggleActivity(int eActivity_toUntoggle);
     int getActivity();
     bool isActivityActive(int eActivity_activitiesToCheck);
 
